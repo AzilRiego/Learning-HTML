@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smiley Face</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f8ff;
+        }
+
+        /* Face */
+        .face {
+            position: relative;
+            width: 200px;
+            height: 200px;
+            background-color: #ffeb3b;
+            border-radius: 50%;
+            border: 4px solid #fbc02d;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Eyes */
+        .eye {
+            position: absolute;
+            width: 30px;
+            height: 30px;
+            background-color: black;
+            border-radius: 50%;
+            top: 60px;
+        }
+
+        .eye.left {
+            left: 50px;
+        }
+
+        .eye.right {
+            right: 50px;
+        }
+
+        /* Mouth */
+        .mouth {
+            position: absolute;
+            bottom: 30px;
+            left: 50%;
+            width: 120px;
+            height: 60px;
+            background-color: black;
+            border-radius: 0 0 60px 60px;
+            transform: translateX(-50%);
+        }
+    </style>
+</head>
+<body>
+    <div class="face">
+        <!-- Eyes -->
+        <div class="eye left"></div>
+        <div class="eye right"></div>
+        <!-- Mouth -->
+        <div class="mouth"></div>
+    </div>
+</body>
+</html>
